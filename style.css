@@ -58,9 +58,19 @@ body {
 
 .hero {
   background: #ef3e33;
+  width: 100%;
+  display: inline-block;
+}
+
+.hero-title, .hero-img {
+  width: 100%;
+  float: left;
+  display: inline-block;
+  height: 300px;
 }
 
 .countdown {
+  display: block;
   background: #3ac2cf;
 }
 
@@ -71,4 +81,14 @@ body {
 
 .story-feed {
   display: none;
+}
+
+@media (min-width: 600px) {
+  .hero {
+
+  }
+
+  .hero-title, .hero-img {
+    width: 50%;
+  }
 }
