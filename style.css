@@ -69,6 +69,11 @@ body {
   height: 300px;
 }
 
+.hero-img {
+  background-image: url('img/hero.jpg');
+  background-size: cover;
+}
+
 .countdown {
   display: block;
   background: #3ac2cf;
@@ -95,16 +100,22 @@ body {
   display: none;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .hero {
 
   }
 
   .hero-title, .hero-img {
     width: 50%;
+    height: 500px;
+    display: block;
+  }
+
+  .hero-img {
+
   }
 
   .countdown {
-    font-size: 70px;
+    font-size: 55px;
   }
 }
