@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title of the document</title>
+    <title>Grow the Circle</title>
 
     <link href="style.css" media="screen" rel="stylesheet" type="text/css">
-    <script async="" src="app.js"></script>
+
   </head>
 
   <body>
@@ -18,10 +18,9 @@
     <section class="countdown">
       <p>
         <span class="countdown-clock">
-          <span class="countdown-clock__days">#</span> days,
-          <span class="countdown-clock__hours">#</span> hours,
-          <span class="countdown-clock__minutes">#</span> minutes,
-          <span class="countdown-clock__seconds">#</span> seconds,
+          <span class="countdown-clock__days"></span> days,
+          <span class="countdown-clock__hours"></span> hours,
+          <span class="countdown-clock__minutes"></span> minutes,
       </span>
       <span class="countdown-message">
         until Strong Circle Day
@@ -30,8 +29,10 @@
     </section>
 
     <section class="madlib">
-      <h3>Celebrate the past to grow the future</h3>
-      <p>Do you have a memory from your time as a City Year corps member, that you want to share?Use the form below to fill in a favorite memory, and share it with the world.</p>
+      <p>
+        Do you have a memory from your time as a City Year corps member, that you want to share?
+        Use the form below to fill in a favorite memory, and share it with the world.
+      </p>
 
       <form action="#" method="post">
         <div class="madlib-name">
@@ -75,7 +76,8 @@
           </select>,
         </div>
         <div class="madlib-city">
-          when we were CM's in <select name="city" class="madlib-city--select">
+          when we were CM's in
+          <select name="city" class="madlib-city--select">
               <option value="National">City Year HQ</option>
               <option value="Baton Rouge">Baton Rouge</option>
               <option value="Boston">Boston</option>
@@ -128,5 +130,7 @@
         </div>
       </div>
     </section>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
