@@ -72,6 +72,18 @@ body {
 .countdown {
   display: block;
   background: #3ac2cf;
+  font-family: Helvetica;
+  font-size: 45px;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+.countdown p {
+	padding: 100px 40px;
+}
+
+.countdown-message {
+	color: white;
 }
 
 .madlib {
@@ -83,12 +95,16 @@ body {
   display: none;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
   .hero {
 
   }
 
   .hero-title, .hero-img {
     width: 50%;
+  }
+
+  .countdown {
+    font-size: 70px;
   }
 }
