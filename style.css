@@ -60,6 +60,7 @@ body {
   background: #ef3e33;
   width: 100%;
   display: inline-block;
+  text-align: center;
 }
 
 .hero-title, .hero-img {
@@ -67,6 +68,21 @@ body {
   float: left;
   display: inline-block;
   height: 300px;
+}
+
+.hero-title h1 {
+  background-image: url('img/gtc-logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  height: 220px;
+
+  text-indent: -99999px;
+  overflow: hidden;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .hero-img {
@@ -111,8 +127,10 @@ body {
     display: block;
   }
 
-  .hero-img {
-
+  .hero-title h1 {
+    margin-top: 70px;
+    background-size: contain;
+    height: 320px;
   }
 
   .countdown {
