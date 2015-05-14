@@ -58,19 +58,19 @@ body {
 
 .hero {
   background: #ef3e33;
+  display: block;
+	overflow: hidden;
   width: 100%;
-  display: inline-block;
-  text-align: center;
 }
 
-.hero-title, .hero-img {
+.hero__title,
+.hero__img {
   width: 100%;
-  float: left;
-  display: inline-block;
+  display: block;
   height: 300px;
 }
 
-.hero-title h1 {
+.hero__title {
   background-image: url('img/gtc-logo.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -85,25 +85,30 @@ body {
   margin-bottom: 20px;
 }
 
-.hero-img {
+.hero__img {
   background-image: url('img/hero.jpg');
   background-size: cover;
 }
 
+.intro {
+	display: none;
+}
+
 .countdown {
   display: block;
-  background: #3ac2cf;
-  font-family: Helvetica;
-  font-size: 45px;
-  text-align: center;
-  line-height: 1.3em;
+  background: #fff;
+	text-align: center;
+}
+
+.countdown__title {
+
 }
 
 .countdown p {
 	padding: 100px 40px;
 }
 
-.countdown-message {
+.countdown__message {
 	color: white;
 }
 
@@ -112,22 +117,20 @@ body {
   background: #3ac2cf;
 }
 
-.story-feed {
+.story__feed {
   display: none;
 }
 
 @media (min-width: 800px) {
-  .hero {
-
-  }
-
-  .hero-title, .hero-img {
+  .hero__title,
+	.hero__img {
     width: 50%;
     height: 500px;
     display: block;
+		float: left;
   }
 
-  .hero-title h1 {
+  .hero__title {
     margin-top: 70px;
     background-size: contain;
     height: 320px;

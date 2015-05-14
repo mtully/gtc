@@ -13,6 +13,6 @@ var hourCountdown = Math.trunc(hours / hourConstant)
 var minutes = hours % hourConstant
 var minuteCountdown = Math.trunc(minutes / minuteConstant)
 
-$('.countdown-clock__days').text(daysCountdown)
-$('.countdown-clock__hours').text(hourCountdown)
-$('.countdown-clock__minutes').text(minuteCountdown)
+$('.countdown__clock--days').text(daysCountdown)
+$('.countdown__clock--hours').text(hourCountdown)
+$('.countdown__clock--minutes').text(minuteCountdown)

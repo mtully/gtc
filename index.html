@@ -2,31 +2,37 @@
 <html>
   <head>
     <title>Grow the Circle</title>
-
     <link href="style.css" media="screen" rel="stylesheet" type="text/css">
-
   </head>
 
   <body>
 
     <section class="hero">
-      <div class="hero-title">
+      <div class="hero__title">
         <h1>Grow the circle</h1>
-        <h2>Celebrate the past to grow the future</h2>
       </div>
-      <div class="hero-img"></div>
+      <div class="hero__img"></div>
+    </section>
 
+    <section class="intro">
+      <h2 class="intro__title">Celebrate the past to grow the future</h2>
+      <p class="intro__paragraph">
+        Think back to your Strong Circle. Who was standing beside you, shoulder to shoulder? What memory do you have that stands out above the rest? We hope that this form inspires you to share a memory and celebrate a fellow corps member.
+      </p>
     </section>
 
     <section class="countdown">
-      <p>
-        <span class="countdown-clock">
-          <span class="countdown-clock__days"></span> days,
-          <span class="countdown-clock__hours"></span> hours,
-          <span class="countdown-clock__minutes"></span> minutes
+      <h2 class="countdown__title">
+        Celebrate the past to grow the future
+      </h2>
+      <p class="countdown__message">
+        <span class="countdown__clock">
+          <span class="countdown__clock--days"></span> days,
+          <span class="countdown__clock--hours"></span> hours,
+          <span class="countdown__clock--minutes"></span> minutes
       </span>
       <br>
-      <span class="countdown-message">
+      <span class="countdown__message">
         until Strong Circle Day
       </span>
       </p>
@@ -39,14 +45,14 @@
       </p>
 
       <form action="#" method="post">
-        <div class="madlib-name">
+        <div class="madlib__name">
           I remember when
           <input type="text" placeholder="name">,
         </div>
-        <div class="madlib-story">
+        <div class="madlib__story">
           <input type="text" value="This is my awesome story">,
         </div>
-        <div class="madlib-year">
+        <div class="madlib__year">
           back in
           <select name="madlib-year" class="madlib-year--select">
             <option value="2015">2015</option>
@@ -79,7 +85,7 @@
             <option value="1988">1988</option>
           </select>,
         </div>
-        <div class="madlib-city">
+        <div class="madlib__city">
           when we were CM's in
           <select name="city" class="madlib-city--select">
               <option value="National">City Year HQ</option>
@@ -113,23 +119,23 @@
           </select>.
         </div>
 
-        <div class="madlib-submit">
+        <div class="madlib__submit">
           <button type="submit">Share your story</button>
         </div>
       </form>
     </section>
 
-    <section class="story-feed">
-      <h3>The growing circle</h3>
+    <section class="storyFeed">
+      <h3 class="storyFeed__title">The growing circle</h3>
 
-      <div class="story-post">
-        <div class="story-body">
+      <div class="storyPost">
+        <div class="storyPost__body">
           I remember when <span class="story-body__highlight">NAME</span>,
-          <span class="story-body__highlight">AWESOME STORY VISITOR TOLD</span>,
-          back in <span class="story-body__highlight">YEAR</span>,
-          when we were in <span class="story-body__highlight">CITY</span>.
+          <span class="storyPost__body--highlight">AWESOME STORY VISITOR TOLD</span>,
+          back in <span class="storyPost__body--highlight">YEAR</span>,
+          when we were in <span class="storyPost__body--highlight">CITY</span>.
         </div>
-        <div class="story-author">
+        <div class="storyPost__author">
           - FIRST LAST
         </div>
       </div>
