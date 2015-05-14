@@ -91,6 +91,13 @@ body {
 
 .madlib {
   background: #3ac2cf;
+	padding: 50px;
+}
+
+.madLib__form {
+	font-family: "swiss_721light", helvetica, arial, sans-serif;
+	font-size: 54px;
+	color: #293638;
 }
 
 .story__feed {
