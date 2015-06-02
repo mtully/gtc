@@ -1,95 +1,103 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>Grow the Circle</title>
-    <link href="style.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="fonts.css" media="screen" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" media="all" href="assets/fonts.css?body=1" data-turbolinks-track="true" />
+    <link rel="stylesheet" media="all" href="assets/images.css?body=1" data-turbolinks-track="true" />
+    <link rel="stylesheet" media="all" href="assets/application.css?body=1" data-turbolinks-track="true" />
+    <script src="assets/jquery.js?body=1" data-turbolinks-track="true"></script>
+    <script src="assets/app.js?body=1" data-turbolinks-track="true"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png" />
   </head>
 
   <body>
 
-    <section class="hero">
-      <div class="hero__title">
-        <h1>Grow the circle</h1>
-      </div>
-      <div class="hero__img"></div>
-    </section>
+    <div class="wrapper">
+      <section class="hero">
+        <div class="hero__title">
+          <h1>Grow the circle</h1>
+        </div>
+        <div class="hero__img"></div>
+      </section>
 
-     <section class="countdown" style="display:none">
-      <h2 class="countdown__title">
-        Share your past. Shape their future. Grow the circle.
-      </h2>
-      <p class="countdown__message">
+      <section class="intro">
+        <h2 class="intro__title">Share your past. Shape their future. Grow the circle.</h2>
+        <p class="intro__paragraph">
+        Think back to your Strong Circle. Who was standing beside you, shoulder to shoulder? What memory do you have that stands out above the rest? We hope that this form inspires you to share a memory and celebrate a fellow corps member.
+        </p>
+      </section>
+
+      <section class="countdown">
+        <p class="countdown__message">
         <span class="countdown__clock">
           <span class="countdown__clock--days"></span> days,
           <span class="countdown__clock--hours"></span> hours,
           <span class="countdown__clock--minutes"></span> minutes
-      </span>
-      <br>
-      <span class="countdown__message--highlight">
-        until Strong Circle Day
-      </span>
-      </p>
-    </section>
+        </span>
+        <br>
+        <span class="countdown__message--highlight">
+          until Strong Circle Day
+        </span>
+        </p>
+        <h2 class="countdown__title">
+          Share your past. Shape their future. Grow the circle.
+          <p><em>#</em>StrongCircleDay</p>
+        </h2>
+      </section>
 
-    <section class="intro" style="display:none">
-      <h2 class="intro__title">
-        Share your past. Shape their future. Grow the circle.
-      </h2>
-      <p class="intro__message">
-        Think back to your Strong Circle.
-        Who was standing beside you, shoulder to shoulder?
-        What memory do you have that stands out above the rest?
-        We hope that this form inspires you to share a memory
-        and celebrate a fellow corps member.
-      </p>
-    </section>
+      <section class="madlib">
+        <p>
+        Do you have a memory from your time as a City Year corps member, that you want to share?
+        Use the form below to fill in a favorite memory, and share it with the world.
+        </p>
 
-    <section class="madlib">
-      <form class="madLib__form" action="#" method="post">
-        <div class="madlib__name">
-          I remember when
-          <input type="text" placeholder="name">,
-        </div>
-        <div class="madlib__story">
-          <input type="text" value="This is my awesome story">,
-        </div>
-        <div class="madlib__year">
-          back in
-          <select name="madlib-year" class="madlib-year--select">
-            <option value="2015">2015</option>
-            <option value="2014">2014</option>
-            <option value="2013">2013</option>
-            <option value="2012">2012</option>
-            <option value="2011">2011</option>
-            <option value="2010">2010</option>
-            <option value="2009">2009</option>
-            <option value="2008">2008</option>
-            <option value="2007">2007</option>
-            <option value="2006">2006</option>
-            <option value="2005">2005</option>
-            <option value="2004">2004</option>
-            <option value="2003">2003</option>
-            <option value="2002">2002</option>
-            <option value="2001">2001</option>
-            <option value="2000">2000</option>
-            <option value="1999">1999</option>
-            <option value="1998">1998</option>
-            <option value="1997">1997</option>
-            <option value="1996">1996</option>
-            <option value="1995">1995</option>
-            <option value="1994">1994</option>
-            <option value="1993">1993</option>
-            <option value="1992">1992</option>
-            <option value="1991">1991</option>
-            <option value="1990">1990</option>
-            <option value="1989">1989</option>
-            <option value="1988">1988</option>
-          </select>,
-        </div>
-        <div class="madlib__city">
-          when we were CM's in
-          <select name="city" class="madlib-city--select">
+        <form action="#" method="post">
+          <div class="madlib__name">
+            I remember when
+            <input type="text" placeholder="name">,
+          </div>
+          <div class="madlib__story">
+            <input type="text" value="This is my awesome story">,
+          </div>
+          <div class="madlib__year">
+            back in
+            <select name="madlib-year" class="madlib-year--select">
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+              <option value="2006">2006</option>
+              <option value="2005">2005</option>
+              <option value="2004">2004</option>
+              <option value="2003">2003</option>
+              <option value="2002">2002</option>
+              <option value="2001">2001</option>
+              <option value="2000">2000</option>
+              <option value="1999">1999</option>
+              <option value="1998">1998</option>
+              <option value="1997">1997</option>
+              <option value="1996">1996</option>
+              <option value="1995">1995</option>
+              <option value="1994">1994</option>
+              <option value="1993">1993</option>
+              <option value="1992">1992</option>
+              <option value="1991">1991</option>
+              <option value="1990">1990</option>
+              <option value="1989">1989</option>
+              <option value="1988">1988</option>
+            </select>,
+          </div>
+          <div class="madlib__city">
+            when we were CM's in
+            <select name="city" class="madlib-city--select">
               <option value="National">City Year HQ</option>
               <option value="Baton Rouge">Baton Rouge</option>
               <option value="Boston">Boston</option>
@@ -118,31 +126,40 @@
               <option value="Tulsa">Tulsa</option>
               <option value="Washington, D.C.">Washington, D.C.</option>
               <option value="Voices">Voices for National Service</option>
-          </select>.
-        </div>
+            </select>.
+          </div>
 
-        <div class="madlib__submit">
-          <button type="submit">Share your story</button>
-        </div>
-      </form>
-    </section>
+          <div class="madlib__submit">
+            <button type="submit">Share your story</button>
+          </div>
+        </form>
+      </section>
 
-    <section class="storyFeed" style="display:none">
-      <h3 class="storyFeed__title">The growing circle</h3>
+      <section class="storyFeed">
+        <h3 class="storyFeed__title">The growing circle</h3>
 
-      <div class="storyPost">
-        <div class="storyPost__body">
-          I remember when <span class="story-body__highlight">NAME</span>,
-          <span class="storyPost__body--highlight">AWESOME STORY VISITOR TOLD</span>,
-          back in <span class="storyPost__body--highlight">YEAR</span>,
-          when we were in <span class="storyPost__body--highlight">CITY</span>.
+        <div class="storyPost">
+          <div class="storyPost__body">
+            I remember when <span class="story-body__highlight">NAME</span>,
+            <span class="storyPost__body--highlight">AWESOME STORY VISITOR TOLD</span>,
+            back in <span class="storyPost__body--highlight">YEAR</span>,
+            when we were in <span class="storyPost__body--highlight">CITY</span>.
+          </div>
+          <div class="storyPost__author">
+            - FIRST LAST
+          </div>
         </div>
-        <div class="storyPost__author">
-          - FIRST LAST
-        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>Add Strong Circle Day to your calendar</p>
+      <div class="links">
+        <a href="https://www.google.com/calendar/event?action=TEMPLATE&text=Strong+Circle+Day&dates=20150623T040000Z/20150624T035959Z&location=https://grow-the-circle.herokuapp.com&details=City%20Year's%20marathon%20day%20of%20alumni%20giving.">GOOGLE</a>
+        <a href="strong_circle.ics">ICAL</a>
+        <a href="strong_circle.ics">OUTLOOK</a>
       </div>
-    </section>
+    </footer>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="app.js"></script>
   </body>
 </html>
