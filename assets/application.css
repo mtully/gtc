@@ -115,6 +115,11 @@ body {
   font-family: "swiss_721light", helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
+<<<<<<< HEAD
+=======
+  padding: 20px;
+  max-width: 560px;
+>>>>>>> fe6ec3df2c013850fa7f571c87c550c8497dfe5d
   margin: 0 auto;
   max-width: 560px;
   padding: 20px;
@@ -135,11 +140,18 @@ body {
   margin: 10px 4px;
   padding: 20px;
   text-decoration: none;
+<<<<<<< HEAD
   text-transform: uppercase;
 }
 
 .donate__button:hover {
   background-color: #000;
+=======
+  background-color: #1F292A;
+  display: block;
+  border-radius: 4px;
+  margin: 10px 4px;
+>>>>>>> fe6ec3df2c013850fa7f571c87c550c8497dfe5d
 }
 
 .donate__button--subscription {
