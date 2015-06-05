@@ -1,8 +1,16 @@
 @import url("reset.css");
 
+.intro,
+.madlib {
+  display: none;
+}
+
+
 body {
   background: white;
 }
+
+/***** Hero Component *****/
 
 .hero {
   background: #EF3E33;
@@ -36,10 +44,12 @@ body {
   background-size: cover;
 }
 
+/***** Intro Component *****/
 .intro {
-  display: none;
+
 }
 
+/***** Countdown Component *****/
 .countdown {
   display: block;
   background: #fff;
@@ -57,7 +67,6 @@ body {
   line-height: 1.2em;
   margin-bottom: 30px;
 }
-
 
 .countdown__title p {
   color: #41C2CF;
@@ -87,28 +96,28 @@ body {
   display: inline-block;
 }
 
+/***** Donate Component *****/
 .donate__box {
   background: #EDEFEF;
-  padding: 40px 0;
-  width: 80%;
+  padding: 40px 10px;
   margin: 0 auto;
 }
 
 .donate__box h2 {
   font-family: "novecento_sans_widedemibold", helvetica, arial, sans-serif;
   font-size: 13px;
-  text-transform: uppercase;
   letter-spacing: 0.02em;
   line-height: 1.5em;
+  text-transform: uppercase;
 }
 
 .donate__box p {
   font-family: "swiss_721light", helvetica, arial, sans-serif;
-  font-size: 18px;
-  line-height: 28px;
-  padding: 20px;
-  max-width: 560px;
+  font-size: 16px;
+  line-height: 24px;
   margin: 0 auto;
+  max-width: 560px;
+  padding: 20px;
 }
 
 .donate__box p a {
@@ -116,34 +125,38 @@ body {
 }
 
 .donate__button {
+  background-color: #1F292A;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
   font-family: "novecento_sans_widedemibold", helvetica, arial, sans-serif;
   font-size: 16px;
-  text-transform: uppercase;
   letter-spacing: 0.02em;
-  padding: 20px;
-  color: #fff;
-  text-decoration: none;
-  background-color: #1F292A;
-  min-width: 100px;
-  display: inline-block;
-  border-radius: 4px;
   margin: 10px 4px;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.donate__button:hover {
+  background-color: #000;
 }
 
 .donate__button--subscription {
   background-color: #B0BD4A;
 }
 
+.donate__button--subscription:hover {
+  background-color: #8A9B2D;
+}
+
+
+/***** Madlib Component *****/
 .madlib {
-  display:none;
   background: #3ac2cf;
 }
 
-.story__feed {
-  display: none;
-}
-
-
+/***** Footer Component *****/
 footer {
   padding-bottom: 120px;
   background-position: 50% 90%;
@@ -189,7 +202,6 @@ footer, .wrapper:after {
   height: 84px;
 }
 
-
 @media (max-width: 360px) {
   footer p {
     font-size: 15px;
@@ -201,9 +213,7 @@ footer, .wrapper:after {
   }
 }
 
-
 @media (min-width: 415px) {
-
   .countdown__clock {
     width: auto;
   }
@@ -233,13 +243,23 @@ footer, .wrapper:after {
     padding-top: 50px;
   }
 
-  .donate__box h2 {
-    font-size: 18px;
-  }
-
   .countdown__message {
     font-size: 54px;
     line-height: 70px;
+  }
+
+  .donate__box {
+    width: 80%;
+  }
+
+  .donate__box p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .donate__button {
+    display: inline-block;
+    min-width: 80px;
   }
 
   footer {
@@ -280,7 +300,6 @@ html, body {
   min-height: 100%;
   margin-bottom: -84px;
 }
-
 
 .wrapper:after {
   content: "";
