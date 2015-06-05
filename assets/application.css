@@ -1,17 +1,22 @@
 @import url("reset.css");
 
-.intro,
+/* Countdown */
+/* .intro,
 .madlib {
   display: none;
 }
-
+ */
+/* Post-countdown */
+.countdown,
+.footer--preCountdown {
+  display: none !important;
+}
 
 body {
   background: white;
 }
 
 /***** Hero Component *****/
-
 .hero {
   background: #EF3E33;
   display: block;
@@ -42,11 +47,6 @@ body {
 
 .hero__img {
   background-size: cover;
-}
-
-/***** Intro Component *****/
-.intro {
-
 }
 
 /***** Countdown Component *****/
@@ -115,11 +115,6 @@ body {
   font-family: "swiss_721light", helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-<<<<<<< HEAD
-=======
-  padding: 20px;
-  max-width: 560px;
->>>>>>> fe6ec3df2c013850fa7f571c87c550c8497dfe5d
   margin: 0 auto;
   max-width: 560px;
   padding: 20px;
@@ -162,14 +157,18 @@ body {
   background-color: #8A9B2D;
 }
 
+/***** Intro Component *****/
+.intro {
+
+}
 
 /***** Madlib Component *****/
 .madlib {
   background: #3ac2cf;
 }
 
-/***** Footer Component *****/
-footer {
+/***** PreCountdown Footer Component *****/
+.footer--preCountdown {
   padding-bottom: 120px;
   background-position: 50% 90%;
   text-align: center;
@@ -179,17 +178,17 @@ footer {
   font-size: 16px;
 }
 
-footer p {
+.footer--preCountdown p {
   display: block;
   background-position: 15px 50%;
   padding: 35px 0 31px 30px;
 }
 
-footer .links {
+.footer--preCountdown .links {
   display: inline-block;
 }
 
-footer a {
+.footer--preCountdown a {
   display: inline-block;
   margin: 0 0 0 25px;
   text-decoration: none;
@@ -201,19 +200,21 @@ footer a {
   font-family: "novecento_sans_widenormal", helvetica, arial, sans-serif;
 }
 
-footer a:first-child {
+.footer--preCountdown a:first-child {
   margin: 0;
 }
 
-footer a:visited {
+.footer--preCountdown a:visited {
   text-decoration: none;
   color: black;
 }
 
-footer, .wrapper:after {
+.footer--preCountdown, .wrapper:after {
   height: 84px;
 }
 
+
+/* Media Queries */
 @media (max-width: 360px) {
   footer p {
     font-size: 15px;
@@ -274,24 +275,24 @@ footer, .wrapper:after {
     min-width: 80px;
   }
 
-  footer {
+  .footer--preCountdown {
     padding-bottom: 0;
     font-size: 18px;
     background-position: 98.5% 50%;
     background-size: 113px 55px;
   }
 
-  footer p {
+  .footer--preCountdown p {
     display: inline-block;
     padding-left: 50px;
     background-position: 0 50%;
   }
 
-  footer, .wrapper:after {
+  .footer--preCountdown, .wrapper:after {
     height: 84px;
   }
 
-  footer a:first-child {
+  .footer--preCountdown a:first-child {
     margin: 0 0 0 25px;
   }
 }
