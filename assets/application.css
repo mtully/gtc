@@ -135,18 +135,14 @@ body {
   margin: 10px 4px;
   padding: 20px;
   text-decoration: none;
-<<<<<<< HEAD
   text-transform: uppercase;
 }
 
 .donate__button:hover {
   background-color: #000;
-=======
-  background-color: #1F292A;
   display: block;
   border-radius: 4px;
   margin: 10px 4px;
->>>>>>> fe6ec3df2c013850fa7f571c87c550c8497dfe5d
 }
 
 .donate__button--subscription {
@@ -159,7 +155,80 @@ body {
 
 /***** Intro Component *****/
 .intro {
+  padding: 60px 20px 40px;
+  max-width: 860px;
+  margin: 0 auto;
+}
 
+.intro__paragraph {
+  font-family: "swiss_721light", helvetica, arial, sans-serif;
+  font-size: 24px;
+  line-height: 38px;
+  margin: 0 auto;
+  padding: 0 0 30px;
+}
+
+.intro__tagline {
+  font-family: "novecento_sans_widedemibold", helvetica, arial, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+}
+
+.intro__tagline p {
+  color: #38B6C4;
+}
+
+.intro__footer {
+  display: block;
+}
+
+.intro__footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.intro__readMore {
+  display: block;
+  float: left;
+  min-height: 74px;
+  min-width: 400px;
+  background-image: url("arrow.png");
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.intro__readMore p {
+  color: #38B6C4;
+  font-family: "novecento_sans_widedemibold", helvetica, arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  position: absolute;
+  bottom: 0;
+  left: 56px;
+}
+
+.intro__donateNow {
+  display: block;
+  padding-top: 120px;
+}
+
+.intro__donateNow p {
+  font-family: "swiss_721light", helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 36px;
+}
+
+.intro__donateNow a {
+  color: #000;
+  font-family: "novecento_sans_widedemibold", helvetica, arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 /***** Madlib Component *****/
@@ -275,6 +344,12 @@ body {
     min-width: 80px;
   }
 
+  .intro__donateNow {
+    float: right;
+    text-align: right;
+    padding-top: 22px;
+  }
+
   .footer--preCountdown {
     padding-bottom: 0;
     font-size: 18px;
@@ -296,6 +371,7 @@ body {
     margin: 0 0 0 25px;
   }
 }
+
 
 h2 {
   font-family: 'swiss_721light';
