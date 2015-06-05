@@ -54,7 +54,8 @@ body {
   text-transform: uppercase;
   padding-top: 30px;
   letter-spacing: 0.02em;
-  line-height: 1.5em;
+  line-height: 1.2em;
+  margin-bottom: 30px;
 }
 
 
@@ -84,6 +85,53 @@ body {
 .countdown__clock {
   width: 235px;
   display: inline-block;
+}
+
+.donate__box {
+  background: #EDEFEF;
+  padding: 40px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.donate__box h2 {
+  font-family: "novecento_sans_widedemibold", helvetica, arial, sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.5em;
+}
+
+.donate__box p {
+  font-family: "swiss_721light", helvetica, arial, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 20px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.donate__box p a {
+  color: #000;
+}
+
+.donate__button {
+  font-family: "novecento_sans_widedemibold", helvetica, arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #1F292A;
+  min-width: 100px;
+  display: inline-block;
+  border-radius: 4px;
+  margin: 10px 4px;
+}
+
+.donate__button--subscription {
+  background-color: #B0BD4A;
 }
 
 .madlib {
@@ -183,6 +231,10 @@ footer, .wrapper:after {
   .countdown__title {
     font-size: 18px;
     padding-top: 50px;
+  }
+
+  .donate__box h2 {
+    font-size: 18px;
   }
 
   .countdown__message {
