@@ -155,6 +155,7 @@ body {
 
 /***** Intro Component *****/
 .intro {
+  background: #fff;
   padding: 60px 20px 40px;
   max-width: 860px;
   margin: 0 auto;
@@ -231,9 +232,159 @@ body {
   letter-spacing: 0.04em;
 }
 
-/***** Madlib Component *****/
-.madlib {
+/***** Story Form Component *****/
+.storyForm {
   background: #3ac2cf;
+  padding: 60px 20px 40px;
+}
+
+.storyForm__form {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.storyForm__form h2 {
+  font-size: 48px;
+  padding-bottom: 40px;
+}
+
+.storyForm label {
+  font-family: "novecento_sans_widedemibold", helvetica, arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: block;
+  padding: 10px 0;
+}
+
+.storyForm textarea {
+  resize: none;
+}
+
+.storyForm input[type="text"],
+.storyForm textarea {
+  appearance: none;
+  border-radius: none;
+  border: solid 3px #fff;
+  box-shadow: none;
+  color: #fff;
+  display: inline-block;
+  font-family: "swiss_721light", helvetica, arial, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  max-width: 860px;
+  padding: 16px 12px;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 30px;
+  font-family: "swiss_721light", helvetica, arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.storyForm input:focus,
+.storyForm textarea:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+   color: rgba(255, 255, 255, 0.5);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(255, 255, 255, 0.5)
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: rgba(255, 255, 255, 0.5)
+}
+
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5)
+}
+
+.storyForm__wrap {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.storyForm__year,
+.storyForm__city {
+  float:left;
+}
+
+.storyForm__year {
+  width: 30%;
+}
+
+.storyForm__city {
+  width: 70%;
+}
+
+.storyForm select {
+  appearance:none;
+  -webkit-appearance: none;
+  background: transparent;
+  border-radius:0px;
+  border:3px solid #fff;
+  box-shadow: none;
+  color: #fff;
+  display: inline-block;
+  font-family: "swiss_721light", helvetica, arial, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  outline:none;
+  padding:16px 12px;
+  width: 90%;
+  cursor: pointer;
+  background-image: url("dropdown-arrow.png");
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+}
+
+.storyForm__submit a {
+  /* background-color: #1E3588; */
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-family: "novecento_sans_widedemibold", helvetica, arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  margin: 20px 0 40px;
+  padding: 20px 20px 20px 80px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background: #293d79; /* Old browsers */
+  background-image: url("fb.png");
+  background-image: url("fb.png"), -moz-linear-gradient(left,  #364B8E 0%, #364B8E 20%, #5065A5 24%, #5065A5 100%); /* FF3.6+ */
+  background-image: url("fb.png"), -webkit-gradient(linear, left top, right top, color-stop(0%,#364B8E), color-stop(20%,#364B8E), color-stop(20%,#5065A5), color-stop(100%,#5065A5)); /* Chrome,Safari4+ */
+  background-image: url("fb.png"), -webkit-linear-gradient(left,  #364B8E 0%,#364B8E 20%,#5065A5 24%,#5065A5 100%); /* Chrome10+,Safari5.1+ */
+  background-image: url("fb.png"), -o-linear-gradient(left,  #364B8E 0%,#364B8E 20%,#5065A5 20%,#5065A5 100%); /* Opera 11.10+ */
+  background-image: url("fb.png"), -ms-linear-gradient(left,  #364B8E 0%,#364B8E 20%,#5065A5 240,#5065A5 100%); /* IE10+ */
+  background-image: url("fb.png"), linear-gradient(to right,  #364B8E 0%,#364B8E 20%,#5065A5 20%,#5065A5 100%); /* W3C */
+
+  background-repeat: no-repeat;
+  background-position: 8% 50%;
+
+}
+
+.storyForm__donateNow {
+  margin-bottom: 20px;
+}
+
+.storyForm__donateNow p {
+  font-family: "swiss_721light", helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 36px;
+}
+
+.storyForm__donateNow a {
+  color: #000;
+  font-family: "novecento_sans_widedemibold", helvetica, arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 /***** PreCountdown Footer Component *****/

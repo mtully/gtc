@@ -79,90 +79,97 @@
         </div>
       </section>
 
-      <section class="madlib">
-        <p>
-          Do you have a memory from your time as a City Year corps member, that you want to share? Use the form below to fill in a favorite memory, and share it with the world.
-        </p>
+      <section class="storyForm">
+        <div class="storyForm__form">
+          <h2>I remember when&#8230;</h2>
 
-        <form action="#" method="post">
-          <div class="madlib__name">
-            I remember when
-            <input type="text" placeholder="name">,
+          <div class="storyForm__name">
+            <label for="name">Name of fellow alum</label>
+            <input type="text" placeholder="e.g. Emily" name="name">
           </div>
-          <div class="madlib__story">
-            <input type="text" value="This is my awesome story">,
+          <div class="storyForm__story">
+            <label for="story">A memory you shared with this person</label>
+            <textarea name="story" maxlength="100" placeholder="e.g. always made our attenDANCES the talk of the halls!"></textarea>
           </div>
-          <div class="madlib__year">
-            back in
-            <select name="madlib-year" class="madlib-year--select">
-              <option value="2015">2015</option>
-              <option value="2014">2014</option>
-              <option value="2013">2013</option>
-              <option value="2012">2012</option>
-              <option value="2011">2011</option>
-              <option value="2010">2010</option>
-              <option value="2009">2009</option>
-              <option value="2008">2008</option>
-              <option value="2007">2007</option>
-              <option value="2006">2006</option>
-              <option value="2005">2005</option>
-              <option value="2004">2004</option>
-              <option value="2003">2003</option>
-              <option value="2002">2002</option>
-              <option value="2001">2001</option>
-              <option value="2000">2000</option>
-              <option value="1999">1999</option>
-              <option value="1998">1998</option>
-              <option value="1997">1997</option>
-              <option value="1996">1996</option>
-              <option value="1995">1995</option>
-              <option value="1994">1994</option>
-              <option value="1993">1993</option>
-              <option value="1992">1992</option>
-              <option value="1991">1991</option>
-              <option value="1990">1990</option>
-              <option value="1989">1989</option>
-              <option value="1988">1988</option>
-            </select>,
-          </div>
-          <div class="madlib__city">
-            when we were CM's in
-            <select name="city" class="madlib-city--select">
-              <option value="National">City Year HQ</option>
-              <option value="Baton Rouge">Baton Rouge</option>
-              <option value="Boston">Boston</option>
-              <option value="Care Force">Care Force</option>
-              <option value="Chicago">Chicago</option>
-              <option value="Cleveland">Cleveland</option>
-              <option value="Columbia">Columbia</option>
-              <option value="Columbus">Columbus</option>
-              <option value="Denver">Denver</option>
-              <option value="Detroit">Detroit</option>
-              <option value="Philadelphia">Greater Philadelphia</option>
-              <option value="Jacksonville">Jacksonville</option>
-              <option value="Little Rock">Little Rock</option>
-              <option value="Los Angeles">Los Angeles</option>
-              <option value="Miami">Miami</option>
-              <option value="Milwaukee">Milwaukee</option>
-              <option value="New Hampshire">New Hampshire</option>
-              <option value="New Orleans">New Orleans</option>
-              <option value="New York">New York</option>
-              <option value="Orlando">Orlando</option>
-              <option value="Rhode Island">Rhode Island</option>
-              <option value="Sacramento ">Sacramento</option>
-              <option value="San Antonio">San Antonio</option>
-              <option value="San Jose">San Jose/Silicon Valley</option>
-              <option value="Seattle">Seattle/King County</option>
-              <option value="Tulsa">Tulsa</option>
-              <option value="Washington, D.C.">Washington, D.C.</option>
-              <option value="Voices">Voices for National Service</option>
-            </select>.
+          <div class="storyForm__wrap">
+            <div class="storyForm__year">
+              <label for="year">Service year</label>
+              <select name="year">
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+                <option value="1999">1999</option>
+                <option value="1998">1998</option>
+                <option value="1997">1997</option>
+                <option value="1996">1996</option>
+                <option value="1995">1995</option>
+                <option value="1994">1994</option>
+                <option value="1993">1993</option>
+                <option value="1992">1992</option>
+                <option value="1991">1991</option>
+                <option value="1990">1990</option>
+                <option value="1989">1989</option>
+                <option value="1988">1988</option>
+              </select>
+            </div>
+            <div class="storyForm__city">
+              <label for="city">Service location</label>
+              <select name="city">
+                <option value="National">City Year HQ</option>
+                <option value="Baton Rouge">Baton Rouge</option>
+                <option value="Boston">Boston</option>
+                <option value="Care Force">Care Force</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Cleveland">Cleveland</option>
+                <option value="Columbia">Columbia</option>
+                <option value="Columbus">Columbus</option>
+                <option value="Denver">Denver</option>
+                <option value="Detroit">Detroit</option>
+                <option value="Philadelphia">Greater Philadelphia</option>
+                <option value="Jacksonville">Jacksonville</option>
+                <option value="Little Rock">Little Rock</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Miami">Miami</option>
+                <option value="Milwaukee">Milwaukee</option>
+                <option value="New Hampshire">New Hampshire</option>
+                <option value="New Orleans">New Orleans</option>
+                <option value="New York">New York</option>
+                <option value="Orlando">Orlando</option>
+                <option value="Rhode Island">Rhode Island</option>
+                <option value="Sacramento ">Sacramento</option>
+                <option value="San Antonio">San Antonio</option>
+                <option value="San Jose">San Jose/Silicon Valley</option>
+                <option value="Seattle">Seattle/King County</option>
+                <option value="Tulsa">Tulsa</option>
+                <option value="Washington, D.C.">Washington, D.C.</option>
+                <option value="Voices">Voices for National Service</option>
+              </select>
+            </div>
+            
           </div>
 
-          <div class="madlib__submit">
-            <button type="submit">Share your story</button>
+          <div class="storyForm__submit">
+            <a href="#">Share on facebook</a>
           </div>
-        </form>
+
+          <div class="storyForm__donateNow">
+            <p>Don't want to share a story?</p>
+            <a href="#">Proceed directly to the donation page</a>
+          </div>
+        </div>
       </section>
 
     </div>
