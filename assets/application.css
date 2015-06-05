@@ -163,19 +163,19 @@ body {
 
 .intro__paragraph {
   font-family: "swiss_721light", helvetica, arial, sans-serif;
-  font-size: 24px;
-  line-height: 38px;
+  font-size: 18px;
+  line-height: 28px;
   margin: 0 auto;
   padding: 0 0 30px;
 }
 
 .intro__tagline {
   font-family: "novecento_sans_widedemibold", helvetica, arial, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.02em;
-  line-height: 1.5em;
-  margin-bottom: 30px;
+  line-height: 1.2em;
+  margin-bottom: 20px;
 }
 
 .intro__tagline p {
@@ -183,16 +183,10 @@ body {
 }
 
 .intro__footer {
-  display: block;
+  display: none;
 }
 
-.intro__footer:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.intro__readMore {
+/* .intro__readMore {
   display: block;
   float: left;
   min-height: 74px;
@@ -231,6 +225,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
+*/
 
 /***** Story Form Component *****/
 .storyForm {
@@ -244,13 +239,13 @@ body {
 }
 
 .storyForm__form h2 {
-  font-size: 48px;
-  padding-bottom: 40px;
+  font-size: 32px;
+  padding-bottom: 20px;
 }
 
 .storyForm label {
   font-family: "novecento_sans_widedemibold", helvetica, arial, sans-serif;
-  font-size: 16px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   display: block;
@@ -270,13 +265,14 @@ body {
   color: #fff;
   display: inline-block;
   font-family: "swiss_721light", helvetica, arial, sans-serif;
-  font-size: 22px;
+  font-size: 16px;
+  line-height: 24px;
   margin: 0;
   max-width: 860px;
-  padding: 16px 12px;
+  padding: 10px 8px;
   width: 100%;
   background-color: transparent;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: "swiss_721light", helvetica, arial, sans-serif;
   box-sizing: border-box;
 }
@@ -331,10 +327,10 @@ body {
   color: #fff;
   display: inline-block;
   font-family: "swiss_721light", helvetica, arial, sans-serif;
-  font-size: 22px;
+  font-size: 16px;
   margin: 0;
   outline:none;
-  padding:16px 12px;
+  padding:10px 10px;
   width: 90%;
   cursor: pointer;
   background-image: url("dropdown-arrow.png");
@@ -375,16 +371,17 @@ body {
 
 .storyForm__donateNow p {
   font-family: "swiss_721light", helvetica, arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 36px;
 }
 
 .storyForm__donateNow a {
   color: #000;
   font-family: "novecento_sans_widedemibold", helvetica, arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  line-height: 1.5em;
 }
 
 /***** PreCountdown Footer Component *****/
@@ -495,10 +492,65 @@ body {
     min-width: 80px;
   }
 
+  .intro__paragraph {
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  .intro__tagline {
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+  }
+
   .intro__donateNow {
     float: right;
     text-align: right;
     padding-top: 22px;
+  }
+
+  .intro__footer {
+    /* display: block; */
+    display: none;
+  }
+
+  .intro__footer:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .storyForm__form h2 {
+    font-size: 42px;
+    padding-bottom: 40px;
+  }
+
+  .storyForm label {
+    font-size: 16px;
+  }
+
+  .storyForm input[type="text"],
+  .storyForm textarea {
+    font-size: 22px;
+    padding: 16px 12px;
+    margin-bottom: 30px;
+  }
+
+  .storyForm select {
+    font-size: 22px;
+    padding:16px 12px;
+    width: 90%;
+    cursor: pointer;
+  }
+
+  .storyForm__donateNow p {
+    font-size: 16px;
+    line-height: 36px;
+  }
+
+  .storyForm__donateNow a {
+    font-size: 16px;
+    line-height: 1.5em;
   }
 
   .footer--preCountdown {
