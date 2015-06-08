@@ -1,16 +1,15 @@
 @import url("reset.css");
 
 /* Countdown */
-/* .intro,
-.madlib {
+.intro,
+.storyForm {
   display: none;
 }
- */
 /* Post-countdown */
-.countdown,
+/* .countdown,
 .footer--preCountdown {
   display: none !important;
-}
+} */
 
 body {
   background: white;
@@ -430,6 +429,65 @@ body {
   height: 84px;
 }
 
+/* ================= */
+/* Share Page        */
+/* ================= */
+
+
+/* Donation component        */
+.donation {
+  background: #fff;
+  padding: 40px 10px;
+  margin: 0 auto;
+}
+
+.donation h2 {
+  font-family: "novecento_sans_widedemibold", helvetica, arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+.donation p {
+  font-family: "swiss_721light", helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 0 20px;
+}
+
+.donation p a {
+  color: #000;
+}
+
+.donation__button {
+  background-color: #1F292A;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: "novecento_sans_widedemibold", helvetica, arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  margin: 0 4px 10px 0;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.donation__button:hover {
+  background-color: #000;
+}
+
+.donation__button--subscription {
+  background-color: #B0BD4A;
+}
+
+.donation__button--subscription:hover {
+  background-color: #8A9B2D;
+}
+
+
 
 /* Media Queries */
 @media (max-width: 360px) {
@@ -487,7 +545,8 @@ body {
     line-height: 28px;
   }
 
-  .donate__button {
+  .donate__button,
+  .donate__button:hover {
     display: inline-block;
     min-width: 80px;
   }
@@ -552,6 +611,22 @@ body {
     font-size: 16px;
     line-height: 1.5em;
   }
+
+  .donation {
+    max-width: 860px;
+  }
+
+  .donation h2 {
+    font-size: 18px;
+  }
+
+  .donation__button,
+  .donation__button:hover {
+    display: inline-block;
+    min-width: 80px;
+    margin-bottom: 40px;
+  }
+
 
   .footer--preCountdown {
     padding-bottom: 0;
