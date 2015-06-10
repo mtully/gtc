@@ -1,15 +1,15 @@
 @import url("reset.css");
 
 /* Countdown */
-.intro,
+/* .intro,
 .storyForm {
   display: none;
-}
+} */
 /* Post-countdown */
-/* .countdown,
+.countdown,
 .footer--preCountdown {
   display: none !important;
-} */
+}
 
 body {
   background: white;
