@@ -441,6 +441,13 @@ body {
   width: 158px;
 }
 
+.smiles {
+  background-size: cover;
+  background-image: url(hero.jpg);
+  height: 420px;
+  background-position: 0px -270px;
+}
+
 #fb_login_button {
     width: 80px;
 }
