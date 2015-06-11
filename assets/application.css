@@ -443,9 +443,9 @@ body {
 
 .smiles {
   background-size: cover;
-  background-image: url(hero.jpg);
-  height: 420px;
-  background-position: 0px -270px;
+  background-image: url(smiles.png);
+  height: 500px;
+  background-position: center;
 }
 
 #fb_login_button {
