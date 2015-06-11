@@ -5,7 +5,6 @@
     <title>Grow the Circle</title>
 
     <link rel="stylesheet" media="all" href="assets/fonts.css" />
-    <link rel="stylesheet" media="all" href="assets/images.css" />
     <link rel="stylesheet" media="all" href="assets/application.css" />
     <script src="assets/jquery.js"></script>
     <script src="assets/app.js"></script>
@@ -14,7 +13,7 @@
   </head>
 
   <body>
-
+    <div id="fb-root"></div>
     <div class="wrapper">
       <section class="hero">
         <div class="hero__title">
@@ -40,7 +39,7 @@
           <p><em>#</em>StrongCircleDay</p>
         </h2>
 
-        <div class="donate__box">
+        <section class="donate__box">
           <h2>Donate Now</h2>
           <p>Our corporate partner will match your donation, until we hit $10,000</p>
 
@@ -53,134 +52,146 @@
           <p>
             For any questions about donations please contact us at (617) 927-2423, or email <a href="#">hbatista@cityyear.org</a>.
           </p>
-        </div>
+        </section>
+
+        <section class="addToCal">
+          <p>Add Strong Circle Day to your calendar</p>
+          <div class="links">
+            <a href="https://www.google.com/calendar/event?action=TEMPLATE&text=Strong+Circle+Day&dates=20150623T040000Z/20150624T035959Z&location=https://grow-the-circle.herokuapp.com&details=City%20Year's%20marathon%20day%20of%20alumni%20giving.">GOOGLE</a>
+            <a href="strong_circle.ics">ICAL</a>
+            <a href="strong_circle.ics">OUTLOOK</a>
+          </div>
+        </section>
       </section>
 
-      <section class="intro">
+      <section class="live">
+        <section class="intro">
 
-        <p class="intro__paragraph">
-          Think back to your Strong Circle. Who was standing beside you, shoulder to shoulder? What memory do you have that stands out above the rest? We hope that this form inspires you to share a memory honoring a fellow City Year alum.
-        </p>
+          <p class="intro__paragraph">
+            Think back to your Strong Circle. Who was standing beside you, shoulder to shoulder? What memory do you have that stands out above the rest? We hope that this form inspires you to share a memory honoring a fellow City Year alum.
+          </p>
 
-        <h2 class="intro__tagline">
-          Share your past. Shape their future. Grow the circle.
-          <p><em>#</em>StrongCircleDay</p>
-        </h2>
+          <h2 class="intro__tagline">
+            Share your past. Shape their future. Grow the circle.
+            <p><em>#</em>StrongCircleDay</p>
+          </h2>
 
-        <div class="intro__footer">
-          <div class="intro__readMore">
-            <p>Fill out your memory below</p>
-          </div>
-
-          <div class="intro__donateNow">
-            <p>Don't want to share a story?</p>
-            <a href="#">Proceed directly to the donation page</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="storyForm">
-        <div class="storyForm__form">
-          <h2>I remember when&#8230;</h2>
-
-          <div class="storyForm__name">
-            <label for="name">Name of fellow alum</label>
-            <input type="text" placeholder="e.g. Emily" name="name">
-          </div>
-          <div class="storyForm__story">
-            <label for="story">A memory you shared with this person</label>
-            <textarea name="story" maxlength="100" placeholder="e.g. always made our attenDANCES the talk of the halls!"></textarea>
-          </div>
-          <div class="storyForm__wrap">
-            <div class="storyForm__year">
-              <label for="year">Service year</label>
-              <select name="year">
-                <option value="2015">2015</option>
-                <option value="2014">2014</option>
-                <option value="2013">2013</option>
-                <option value="2012">2012</option>
-                <option value="2011">2011</option>
-                <option value="2010">2010</option>
-                <option value="2009">2009</option>
-                <option value="2008">2008</option>
-                <option value="2007">2007</option>
-                <option value="2006">2006</option>
-                <option value="2005">2005</option>
-                <option value="2004">2004</option>
-                <option value="2003">2003</option>
-                <option value="2002">2002</option>
-                <option value="2001">2001</option>
-                <option value="2000">2000</option>
-                <option value="1999">1999</option>
-                <option value="1998">1998</option>
-                <option value="1997">1997</option>
-                <option value="1996">1996</option>
-                <option value="1995">1995</option>
-                <option value="1994">1994</option>
-                <option value="1993">1993</option>
-                <option value="1992">1992</option>
-                <option value="1991">1991</option>
-                <option value="1990">1990</option>
-                <option value="1989">1989</option>
-                <option value="1988">1988</option>
-              </select>
-            </div>
-            <div class="storyForm__city">
-              <label for="city">Service location</label>
-              <select name="city">
-                <option value="National">City Year HQ</option>
-                <option value="Baton Rouge">Baton Rouge</option>
-                <option value="Boston">Boston</option>
-                <option value="Care Force">Care Force</option>
-                <option value="Chicago">Chicago</option>
-                <option value="Cleveland">Cleveland</option>
-                <option value="Columbia">Columbia</option>
-                <option value="Columbus">Columbus</option>
-                <option value="Denver">Denver</option>
-                <option value="Detroit">Detroit</option>
-                <option value="Philadelphia">Greater Philadelphia</option>
-                <option value="Jacksonville">Jacksonville</option>
-                <option value="Little Rock">Little Rock</option>
-                <option value="Los Angeles">Los Angeles</option>
-                <option value="Miami">Miami</option>
-                <option value="Milwaukee">Milwaukee</option>
-                <option value="New Hampshire">New Hampshire</option>
-                <option value="New Orleans">New Orleans</option>
-                <option value="New York">New York</option>
-                <option value="Orlando">Orlando</option>
-                <option value="Rhode Island">Rhode Island</option>
-                <option value="Sacramento ">Sacramento</option>
-                <option value="San Antonio">San Antonio</option>
-                <option value="San Jose">San Jose/Silicon Valley</option>
-                <option value="Seattle">Seattle/King County</option>
-                <option value="Tulsa">Tulsa</option>
-                <option value="Washington, D.C.">Washington, D.C.</option>
-                <option value="Voices">Voices for National Service</option>
-              </select>
+          <div class="intro__footer">
+            <div class="intro__readMore">
+              <p>Fill out your memory below</p>
             </div>
 
+            <div class="intro__donateNow">
+              <p>Don't want to share a story?</p>
+              <a href="#">Proceed directly to the donation page</a>
+            </div>
           </div>
+        </section>
 
-          <div class="storyForm__submit">
-            <a href="#">Share on facebook</a>
-          </div>
+        <section class="storyForm">
+          <div class="storyForm__form">
+            <h2>I remember when&#8230;</h2>
 
-          <div class="storyForm__donateNow">
-            <p>Don't want to share a story?</p>
-            <a href="#">Proceed directly to the donation page</a>
+            <div class="storyForm__name">
+              <label for="name">Name of fellow alum</label>
+              <input type="text" placeholder="e.g. Emily" name="name">
+            </div>
+            <div class="storyForm__story">
+              <label for="story">A memory you shared with this person</label>
+              <textarea name="story" maxlength="100" placeholder="e.g. always made our attenDANCES the talk of the halls!"></textarea>
+            </div>
+            <div class="storyForm__wrap">
+              <div class="storyForm__year">
+                <label for="year">Service year</label>
+                <select name="year">
+                  <option value="2015">2015</option>
+                  <option value="2014">2014</option>
+                  <option value="2013">2013</option>
+                  <option value="2012">2012</option>
+                  <option value="2011">2011</option>
+                  <option value="2010">2010</option>
+                  <option value="2009">2009</option>
+                  <option value="2008">2008</option>
+                  <option value="2007">2007</option>
+                  <option value="2006">2006</option>
+                  <option value="2005">2005</option>
+                  <option value="2004">2004</option>
+                  <option value="2003">2003</option>
+                  <option value="2002">2002</option>
+                  <option value="2001">2001</option>
+                  <option value="2000">2000</option>
+                  <option value="1999">1999</option>
+                  <option value="1998">1998</option>
+                  <option value="1997">1997</option>
+                  <option value="1996">1996</option>
+                  <option value="1995">1995</option>
+                  <option value="1994">1994</option>
+                  <option value="1993">1993</option>
+                  <option value="1992">1992</option>
+                  <option value="1991">1991</option>
+                  <option value="1990">1990</option>
+                  <option value="1989">1989</option>
+                  <option value="1988">1988</option>
+                </select>
+              </div>
+              <div class="storyForm__city">
+                <label for="city">Service location</label>
+                <select name="city">
+                  <option value="National">City Year HQ</option>
+                  <option value="Baton Rouge">Baton Rouge</option>
+                  <option value="Boston">Boston</option>
+                  <option value="Care Force">Care Force</option>
+                  <option value="Chicago">Chicago</option>
+                  <option value="Cleveland">Cleveland</option>
+                  <option value="Columbia">Columbia</option>
+                  <option value="Columbus">Columbus</option>
+                  <option value="Denver">Denver</option>
+                  <option value="Detroit">Detroit</option>
+                  <option value="Philadelphia">Greater Philadelphia</option>
+                  <option value="Jacksonville">Jacksonville</option>
+                  <option value="Little Rock">Little Rock</option>
+                  <option value="Los Angeles">Los Angeles</option>
+                  <option value="Miami">Miami</option>
+                  <option value="Milwaukee">Milwaukee</option>
+                  <option value="New Hampshire">New Hampshire</option>
+                  <option value="New Orleans">New Orleans</option>
+                  <option value="New York">New York</option>
+                  <option value="Orlando">Orlando</option>
+                  <option value="Rhode Island">Rhode Island</option>
+                  <option value="Sacramento ">Sacramento</option>
+                  <option value="San Antonio">San Antonio</option>
+                  <option value="San Jose">San Jose/Silicon Valley</option>
+                  <option value="Seattle">Seattle/King County</option>
+                  <option value="Tulsa">Tulsa</option>
+                  <option value="Washington, D.C.">Washington, D.C.</option>
+                  <option value="Voices">Voices for National Service</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="storyForm__submit">
+              <a href="#">Share on facebook</a>
+            </div>
+
+            <div class="storyForm__donateNow">
+              <p>Don't want to share a story?</p>
+              <a href="#">Proceed directly to the donation page</a>
+            </div>
           </div>
-        </div>
+        </section>
       </section>
 
     </div>
 
-    <footer class="footer--preCountdown">
-      <p>Add Strong Circle Day to your calendar</p>
-      <div class="links">
-        <a href="https://www.google.com/calendar/event?action=TEMPLATE&text=Strong+Circle+Day&dates=20150623T040000Z/20150624T035959Z&location=https://grow-the-circle.herokuapp.com&details=City%20Year's%20marathon%20day%20of%20alumni%20giving.">GOOGLE</a>
-        <a href="strong_circle.ics">ICAL</a>
-        <a href="strong_circle.ics">OUTLOOK</a>
+
+
+    <footer class="footer--global">
+      <div class="footer__fbLike">
+        <p class="footer__hashtag"><em>#</em>StrongCircleDay</p>
+        <div class="fb-like" data-href="https://grow-the-circle.herokuapp.com/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
       </div>
+      <div class="footer__logo"></div>
     </footer>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   </body>
