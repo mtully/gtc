@@ -1,8 +1,8 @@
 @import url("reset.css");
 
 /* Pre/Post Countdown Visibility */
-/* .live { display: none !important;} */
-.countdown { display: none !important; }
+.live { display: none !important;}
+/* .countdown { display: none !important; } */
 
 body {
   background: white;
@@ -111,7 +111,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   margin: 0 auto;
-  max-width: 560px;
+  max-width: 580px;
   padding: 20px;
 }
 
@@ -522,7 +522,7 @@ body {
   font-family: "swiss_721light", helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  padding: 10px 0 20px;
+  padding: 10px 110px 20px 0;
 }
 
 .donation p a {
